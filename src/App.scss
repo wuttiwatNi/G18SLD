@@ -1,0 +1,28 @@
+body {
+  margin: 0;
+}
+
+.main-col {
+  display: flex;
+  min-height: 100vh;
+  overflow: auto;
+
+  .col {
+    &.c1 {
+      min-width: 200px;
+      max-width: 200px;
+    }
+
+    &.c2 {
+      min-width: 98px;
+      width: calc(100% - 502px);
+      border-left: 1px solid black;
+      border-right: 1px solid black;
+    }
+
+    &.c3 {
+      min-width: 300px;
+      max-width: 300px;
+    }
+  }
+}
